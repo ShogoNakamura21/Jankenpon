@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.ac.ritsumei.ise.phy.exp2.is0421kx.jankenpon.GameActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="380dp"
+        android:layout_height="151dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/teki" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="377dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="4dp"
+        android:text="じゃん・けん..."
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="379dp"
+        android:layout_height="142dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="3dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/me" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="375dp"
+        android:layout_height="114dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+        <ImageButton
+            android:id="@+id/rock"
+            android:layout_width="145dp"
+            android:layout_height="134dp"
+            android:layout_weight="1"
+            android:onClick="onClickButton1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/rock"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="341dp" />
+
+        <ImageButton
+            android:id="@+id/scissors"
+            android:layout_width="139dp"
+            android:layout_height="134dp"
+            android:layout_weight="1"
+            android:onClick="onClickButton2"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/scissors"
+            tools:layout_editor_absoluteX="147dp"
+            tools:layout_editor_absoluteY="341dp" />
+
+        <ImageButton
+            android:id="@+id/paper"
+            android:layout_width="135dp"
+            android:layout_height="131dp"
+            android:layout_weight="1"
+            android:onClick="onClickButton3"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/paper"
+            tools:layout_editor_absoluteX="247dp"
+            tools:layout_editor_absoluteY="341dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="377dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="4dp"
+        android:onClick="onExitButtonTapped"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</android.support.constraint.ConstraintLayout>
